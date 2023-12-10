@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        div {
+            text-align: center;
+            color: #333;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 10px 0;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <h1>Result</h1>
+        <p>Credit Score: {{ credit_score|int }}</p>
+        <p>Credit Limit: {{ credit_limit|int }}</p>
+    </div>
+</body>
+</html>
